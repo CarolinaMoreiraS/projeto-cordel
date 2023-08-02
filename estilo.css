@@ -50,25 +50,43 @@ section{
     font-family: var(--fonte3);
     font-size: 1.5em;
 }
+section > p{
+    padding-bottom:2em;
+}
 section.normal{
     background-color: white;
     color: black;
 }
 
 section.imagem{
-    background-color: rgb(77, 77, 77);
+    background-color: rgba(77, 77, 77, 0);
     color: white;
+    box-shadow: inset 6px  6px 13px 0px rgba(0, 0, 0, 0.444);
+    background-attachment: fixed;
     
     
 }
 section.imagem > p{
-    background-color: rgb(55, 54, 54);
+    background-color: rgba(55, 54, 54, 0.16);
     width: 400px;
     padding: 5px;
+    text-shadow: 1px 1px 0px black
 }
 footer{
     background-color:black;
     color: white;
     text-align: center;
     padding:10px;  
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+
 }
